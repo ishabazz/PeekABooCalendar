@@ -44,13 +44,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //State Restoration
     
     func application(_ application: UIApplication, shouldSaveApplicationState coder: NSCoder) -> Bool {
-        return true
-    }
+        // Save the current app version to the archive.
+        coder.encode(1.0, forKey: "MyAppVersion")
+        // Always save state information.
+        return true    }
     
     
     func application(_ application: UIApplication, shouldRestoreApplicationState coder: NSCoder) -> Bool {
-        return true
-    }
+        // Restore the state only if the app version matches.
+        let version = coder.decodeFloat(forKey: "MyAppVersion")
+        if version == 1.0 {
+            return true
+        }
+        // Do not restore from old data.
+        return false    }
     //Use this method for restoring the state of UINavigationControllers created in code
     func application(_ application: UIApplication, viewControllerWithRestorationIdentifierPath identifierComponents: [String], coder: NSCoder) -> UIViewController? {
         guard let lastIdentifier = identifierComponents.last  else {return nil}
