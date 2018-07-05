@@ -16,4 +16,4 @@ Peek a Boo calendar  is a demo project that I made to teach state restoration. I
 
 **Dynamic ViewControllers** -  This  restores state restoration in  a scene that uses a dynamic  modal view controller.
 
-**Opting OUt**  - This branch add exceptions for state restoration and opts out of state restoration if the version has changed since the last time the app was running. 
+**Opting Out**  - This branch add exceptions for state restoration and opts out of state restoration if the version has changed since the last time the app was running. 
