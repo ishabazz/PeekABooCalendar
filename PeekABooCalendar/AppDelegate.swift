@@ -51,7 +51,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, shouldRestoreApplicationState coder: NSCoder) -> Bool {
         return true
     }
-    
+    //Use this method for restoring the state of UINavigationControllers created in code
+    func application(_ application: UIApplication, viewControllerWithRestorationIdentifierPath identifierComponents: [String], coder: NSCoder) -> UIViewController? {
+        guard let lastIdentifier = identifierComponents.last  else {return nil}
+        
+        if lastIdentifier == "detailNav" {
+            let nav = PeekABooNav()
+            nav.restorationIdentifier = "detailNav"
+            nav.navigationBar.barTintColor = .black
+            nav.navigationBar.backgroundColor = .black
+            nav.modalTransitionStyle = .crossDissolve
+            nav.navigationBar.tintColor = UIColor.brightTurquoise
+            nav.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,NSAttributedString.Key.font:
+                UIFont.systemFont(ofSize: 36, weight: .heavy) ]
+            return nav
+        }
+        return nil
+    }
 
 }
 

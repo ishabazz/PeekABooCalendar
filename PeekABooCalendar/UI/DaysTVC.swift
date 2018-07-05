@@ -11,6 +11,24 @@ import UIKit
 class DaysTVC: UITableViewController {
     var date:Date = Date()
     var month:Month?
+    //Save Data
+    override func encodeRestorableState(with coder: NSCoder) {
+        super.encodeRestorableState(with: coder)
+        // Save the filename so that we can load it later
+        coder.encode(self.month?.rawValue, forKey: "month")
+        coder.encode(self.date, forKey: "date")
+    }
+    //Restore Data
+    override func decodeRestorableState(with coder: NSCoder) {
+        super.decodeRestorableState(with: coder)
+        if let identifier = coder.decodeObject(forKey: "month") as? String, let month = Month(rawValue: identifier){
+            self.month = month
+        }
+        if let date = coder.decodeObject(forKey: "date") as? Date{
+            self.date = date
+        }
+        self.title = month?.string().capitalized ?? ""
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +61,7 @@ class DaysTVC: UITableViewController {
         comps.day = indexPath.row + 1
         detail.date = cal.date(from: comps) ?? self.date
         let nav = PeekABooNav(rootViewController: detail)
+        nav.restorationIdentifier = "detailNav"
         nav.navigationController?.navigationBar.barTintColor = .black
         nav.navigationController?.navigationBar.backgroundColor = .black
         self.present(nav, animated: true, completion: nil)
