@@ -42,7 +42,10 @@ class DaysTVC: UITableViewController {
         var comps = cal.dateComponents([.year,.month], from: self.date)
         comps.day = indexPath.row + 1
         detail.date = cal.date(from: comps) ?? self.date
-        self.navigationController?.pushViewController(detail, animated: true)
+        let nav = PeekABooNav(rootViewController: detail)
+        nav.navigationController?.navigationBar.barTintColor = .black
+        nav.navigationController?.navigationBar.backgroundColor = .black
+        self.present(nav, animated: true, completion: nil)
     }
     
 }
