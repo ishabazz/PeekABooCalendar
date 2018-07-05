@@ -8,12 +8,12 @@ Peek a Boo calendar  is a demo project that I made to teach state restoration. I
 
 **Basic** - This is very basic state restoration that reserves the hierarchy and static content, but no dynamic data.
 
-**Encode Data** This is a nearly perfect implementation which stores hierarchy and data, but doesn’t store the scroll positions of the tableviews. 
+**Encode Data** - This is a nearly perfect implementation which stores hierarchy and data, but doesn’t store the scroll positions of the tableviews. 
 
-**Scroll Position** This is the full implementation of state restoration .
+**Scroll Position** - This is the full implementation of state restoration .
 
-**Complex** This implementation uses custom modal views instead of the navigation controller….and it breaks.
+**Complex** - This implementation uses custom modal views instead of the navigation controller….and it breaks.
 
- **Dynamic ViewControllers** This  restores state restoration in  a scene that uses a dynamic  modal view controller.
+**Dynamic ViewControllers** -  This  restores state restoration in  a scene that uses a dynamic  modal view controller.
 
-**Exceptions** This branch add exceptions for state restoration and opts out of state restoration if the version has changed since the last time the app was running. 
+**Opting OUt**  - This branch add exceptions for state restoration and opts out of state restoration if the version has changed since the last time the app was running. 
