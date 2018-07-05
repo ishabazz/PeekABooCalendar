@@ -9,19 +9,41 @@
 /* Begin PBXBuildFile section */
 		C8AF23EE20ED9E3200B5CD0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF23ED20ED9E3200B5CD0D /* AppDelegate.swift */; };
 		C8AF23F020ED9E3200B5CD0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF23EF20ED9E3200B5CD0D /* ViewController.swift */; };
-		C8AF23F320ED9E3200B5CD0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AF23F120ED9E3200B5CD0D /* Main.storyboard */; };
 		C8AF23F520ED9E3400B5CD0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8AF23F420ED9E3400B5CD0D /* Assets.xcassets */; };
-		C8AF23F820ED9E3400B5CD0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AF23F620ED9E3400B5CD0D /* LaunchScreen.storyboard */; };
+		C8AF240720EDA08200B5CD0D /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF240020EDA08200B5CD0D /* DetailVC.swift */; };
+		C8AF240820EDA08200B5CD0D /* Year2017TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF240120EDA08200B5CD0D /* Year2017TVC.swift */; };
+		C8AF240920EDA08200B5CD0D /* PeekABooNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF240220EDA08200B5CD0D /* PeekABooNav.swift */; };
+		C8AF240A20EDA08200B5CD0D /* DaysTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF240320EDA08200B5CD0D /* DaysTVC.swift */; };
+		C8AF240B20EDA08200B5CD0D /* Year2019TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF240420EDA08200B5CD0D /* Year2019TVC.swift */; };
+		C8AF240C20EDA08200B5CD0D /* Year2018TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF240520EDA08200B5CD0D /* Year2018TVC.swift */; };
+		C8AF240D20EDA08200B5CD0D /* MonthTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF240620EDA08200B5CD0D /* MonthTVC.swift */; };
+		C8AF240F20EDA0D000B5CD0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AF240E20EDA0D000B5CD0D /* LaunchScreen.storyboard */; };
+		C8AF241120EDA0D900B5CD0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AF241020EDA0D900B5CD0D /* Main.storyboard */; };
+		C8AF241820EDA10100B5CD0D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF241320EDA10100B5CD0D /* Colors.swift */; };
+		C8AF241A20EDA10100B5CD0D /* Months.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF241520EDA10100B5CD0D /* Months.swift */; };
+		C8AF241B20EDA10100B5CD0D /* ModalDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF241620EDA10100B5CD0D /* ModalDetailVC.swift */; };
+		C8AF241D20EDA10900B5CD0D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF241C20EDA10900B5CD0D /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C8AF23EA20ED9E3200B5CD0D /* PeekABooCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeekABooCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8AF23ED20ED9E3200B5CD0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8AF23EF20ED9E3200B5CD0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C8AF23F220ED9E3200B5CD0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8AF23F420ED9E3400B5CD0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C8AF23F720ED9E3400B5CD0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8AF23F920ED9E3400B5CD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8AF240020EDA08200B5CD0D /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		C8AF240120EDA08200B5CD0D /* Year2017TVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Year2017TVC.swift; sourceTree = "<group>"; };
+		C8AF240220EDA08200B5CD0D /* PeekABooNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeekABooNav.swift; sourceTree = "<group>"; };
+		C8AF240320EDA08200B5CD0D /* DaysTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTVC.swift; sourceTree = "<group>"; };
+		C8AF240420EDA08200B5CD0D /* Year2019TVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Year2019TVC.swift; sourceTree = "<group>"; };
+		C8AF240520EDA08200B5CD0D /* Year2018TVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Year2018TVC.swift; sourceTree = "<group>"; };
+		C8AF240620EDA08200B5CD0D /* MonthTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthTVC.swift; sourceTree = "<group>"; };
+		C8AF240E20EDA0D000B5CD0D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8AF241020EDA0D900B5CD0D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C8AF241320EDA10100B5CD0D /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C8AF241520EDA10100B5CD0D /* Months.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Months.swift; sourceTree = "<group>"; };
+		C8AF241620EDA10100B5CD0D /* ModalDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalDetailVC.swift; sourceTree = "<group>"; };
+		C8AF241C20EDA10900B5CD0D /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,33 @@
 		C8AF23EC20ED9E3200B5CD0D /* PeekABooCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				C8AF23FF20EDA08200B5CD0D /* UI */,
 				C8AF23ED20ED9E3200B5CD0D /* AppDelegate.swift */,
 				C8AF23EF20ED9E3200B5CD0D /* ViewController.swift */,
-				C8AF23F120ED9E3200B5CD0D /* Main.storyboard */,
+				C8AF241320EDA10100B5CD0D /* Colors.swift */,
+				C8AF241620EDA10100B5CD0D /* ModalDetailVC.swift */,
+				C8AF241520EDA10100B5CD0D /* Months.swift */,
+				C8AF241C20EDA10900B5CD0D /* TabBarController.swift */,
 				C8AF23F420ED9E3400B5CD0D /* Assets.xcassets */,
-				C8AF23F620ED9E3400B5CD0D /* LaunchScreen.storyboard */,
+				C8AF240E20EDA0D000B5CD0D /* LaunchScreen.storyboard */,
 				C8AF23F920ED9E3400B5CD0D /* Info.plist */,
 			);
 			path = PeekABooCalendar;
+			sourceTree = "<group>";
+		};
+		C8AF23FF20EDA08200B5CD0D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C8AF241020EDA0D900B5CD0D /* Main.storyboard */,
+				C8AF240020EDA08200B5CD0D /* DetailVC.swift */,
+				C8AF240120EDA08200B5CD0D /* Year2017TVC.swift */,
+				C8AF240220EDA08200B5CD0D /* PeekABooNav.swift */,
+				C8AF240320EDA08200B5CD0D /* DaysTVC.swift */,
+				C8AF240420EDA08200B5CD0D /* Year2019TVC.swift */,
+				C8AF240520EDA08200B5CD0D /* Year2018TVC.swift */,
+				C8AF240620EDA08200B5CD0D /* MonthTVC.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8AF23F820ED9E3400B5CD0D /* LaunchScreen.storyboard in Resources */,
+				C8AF241120EDA0D900B5CD0D /* Main.storyboard in Resources */,
 				C8AF23F520ED9E3400B5CD0D /* Assets.xcassets in Resources */,
-				C8AF23F320ED9E3200B5CD0D /* Main.storyboard in Resources */,
+				C8AF240F20EDA0D000B5CD0D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +176,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8AF240820EDA08200B5CD0D /* Year2017TVC.swift in Sources */,
+				C8AF241820EDA10100B5CD0D /* Colors.swift in Sources */,
+				C8AF240920EDA08200B5CD0D /* PeekABooNav.swift in Sources */,
+				C8AF241A20EDA10100B5CD0D /* Months.swift in Sources */,
+				C8AF240D20EDA08200B5CD0D /* MonthTVC.swift in Sources */,
 				C8AF23F020ED9E3200B5CD0D /* ViewController.swift in Sources */,
 				C8AF23EE20ED9E3200B5CD0D /* AppDelegate.swift in Sources */,
+				C8AF240B20EDA08200B5CD0D /* Year2019TVC.swift in Sources */,
+				C8AF240C20EDA08200B5CD0D /* Year2018TVC.swift in Sources */,
+				C8AF240A20EDA08200B5CD0D /* DaysTVC.swift in Sources */,
+				C8AF241D20EDA10900B5CD0D /* TabBarController.swift in Sources */,
+				C8AF241B20EDA10100B5CD0D /* ModalDetailVC.swift in Sources */,
+				C8AF240720EDA08200B5CD0D /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C8AF23F120ED9E3200B5CD0D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C8AF23F220ED9E3200B5CD0D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C8AF23F620ED9E3400B5CD0D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C8AF23F720ED9E3400B5CD0D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C8AF23FA20ED9E3400B5CD0D /* Debug */ = {
