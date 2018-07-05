@@ -21,6 +21,27 @@ class DetailVC: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {return .lightContent}
     let formatter = DateFormatter()
 
+    //Save Data
+    override func encodeRestorableState(with coder: NSCoder) {
+        super.encodeRestorableState(with: coder)
+        // Save the filename so that we can load it later
+        if let date = date{
+            coder.encode(formatter.string(from: date), forKey: "filename")
+        }
+    }
+    //Restore Data
+    override func decodeRestorableState(with coder: NSCoder) {
+        super.decodeRestorableState(with: coder)
+        if let identifier = coder.decodeObject(forKey: "filename") as? String, let date = formatter.date(from: identifier){
+            self.date = date
+            self.title = formatter.string(from: date)
+            let text =  UserDefaults.standard.string(forKey: formatter.string(from: date))
+            textView.text = text
+            if textView.text.count == 0{
+                self.textView.becomeFirstResponder()
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.barTintColor = .black
